@@ -2,7 +2,7 @@ h1{
 	background:#242C42;
 	color:#F1F1F1;
 	margin: 0;
-	padding: 0px 0px 0px 4px;
+	padding: 0px 0px 0px 2px;
 	font-size: 22px;
 	font-weight: 100;
 }
@@ -10,12 +10,13 @@ h2{
 	background:#242C42;
 	color:#F1F1F1;
 	margin: 0;
-	padding: 0px 0px 0px 4px;
+	padding: 2px;
 	font-size: 18px;
 	font-weight: 100;
 }
 p{
-	margin: 2px
+	margin: 0px;
+	padding: 2px
 }
 *{
 	vertical-align: top;
