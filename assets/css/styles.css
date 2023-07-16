@@ -50,8 +50,16 @@ html body{
 .wrapper-top nav ul :first-of-type a{
 	border-left:1px solid #242C42;
 }
-.main-container{
-	min-height:450px;
+.welcome{
+	height: 250px;
+	font-size:16px;
+	font-weight:100;
+	margin: 10px 10px 10px 0px;
+	border:1px solid #242C42;
+}
+.updates{
+	height: 475px;
+	overflow: auto;
 	font-size:16px;
 	font-weight:100;
 	margin: 10px 10px 10px 0px;
@@ -92,3 +100,14 @@ section{
 .pfp .content img{
 	width: 100%;
 }
+
+.welcome img{
+	float: right;    
+	margin: 0 0 0 15px;
+}
+
+/*
+.wrapper-main{
+	display: grid;
+	grid-template-columns:2fr 3fr
+} */
