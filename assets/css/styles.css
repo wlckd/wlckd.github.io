@@ -36,7 +36,7 @@ html body{
 	width:900px;
 	margin:10px auto 30px auto;
 }
-.wrapper-top{
+.home .wrapper-top {
 	background: url('../img/banner.png') top center / cover;
 	height: 500px;
 }
@@ -103,11 +103,45 @@ section{
 
 .welcome img{
 	float: right;    
-	margin: 0 0 0 15px;
+	margin: 0 0 0 2px;
 }
 
-/*
-.wrapper-main{
+.warning{
+	color: #F1F1F1;
+}
+
+.blink {
+	display: inline;
+	animation: blink-animation 1s steps(2, start) infinite;
+  }
+  @keyframes blink-animation {
+	to {
+	  visibility: hidden;
+	}
+  }
+
+  .grid-container {
 	display: grid;
-	grid-template-columns:2fr 3fr
-} */
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	gap: 0px 0px;
+	grid-template-areas: 
+		"ryuko"
+		"column";
+}
+
+.ryuko {
+	grid-area: ryuko;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+	grid-column: span 2;
+}
+
+.ryuko img,
+.column img{
+	height: 500px;
+	object-fit: cover;
+	max-width: 100%;
+}
