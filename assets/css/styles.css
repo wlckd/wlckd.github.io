@@ -4,7 +4,6 @@ h1 {
 	margin: 0;
 	padding: 0px 0px 0px 2px;
 	font-size: 22px;
-	font-weight: 100;
 }
 
 h2 {
@@ -13,7 +12,6 @@ h2 {
 	margin: 0;
 	padding: 2px;
 	font-size: 18px;
-	font-weight: 100;
 }
 
 a {
@@ -30,6 +28,7 @@ p {
 	box-sizing: border-box;
 	font-family: "MS PGothic";
 	image-rendering: crisp-edges;
+	font-weight: 100;
 }
 
 html {
@@ -63,7 +62,6 @@ html body {
 .welcome {
 	height: 250px;
 	font-size: 16px;
-	font-weight: 100;
 	margin: 10px 10px 10px 0px;
 	border: 1px solid #242C42;
 }
@@ -72,7 +70,6 @@ html body {
 	height: 475px;
 	overflow: auto;
 	font-size: 16px;
-	font-weight: 100;
 	margin: 10px 10px 10px 0px;
 	border: 1px solid #242C42;
 }
@@ -109,7 +106,6 @@ section {
 
 .wrapper-footer {
 	font-size: 12px;
-	font-weight: 100;
 	bottom: 2px;
 	float: right;
 }
