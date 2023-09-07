@@ -1,33 +1,34 @@
-h1 {
+h1, h2{
 	background: #242C42;
 	color: #F1F1F1;
 	margin: 0;
+}
+
+h1 {
 	padding: 0px 0px 0px 2px;
 	font-size: 22px;
 }
 
 h2 {
-	background: #242C42;
-	color: #F1F1F1;
-	margin: 0;
 	padding: 2px;
 	font-size: 18px;
+}
+
+p {
+	margin: 0px;
+	padding: 2px;
+	font-size: 16px;
 }
 
 a {
 	color: #BF616A;
 }
 
-p {
-	margin: 0px;
-	padding: 2px
-}
-
 * {
 	vertical-align: top;
 	box-sizing: border-box;
 	font-family: "MS PGothic";
-	font-weight: 100;
+	font-weight: 200;
 }
 
 html {
@@ -36,14 +37,18 @@ html {
 }
 
 html body {
-	font-size: 16px;
 	width: 900px;
-	margin: 10px auto 30px auto;
+	margin: 10px auto auto auto;
 }
 
 .home .wrapper-top {
 	background: url('../img/banner.png') top center / cover;
 	height: 500px;
+}
+
+.wrapper-top nav ul li a:hover {
+	background: #BF616A;
+	color: #F1F1F1
 }
 
 .wrapper-top nav ul {
@@ -60,14 +65,17 @@ html body {
 
 .welcome {
 	height: 250px;
-	font-size: 16px;
 	margin: 10px 10px 10px 0px;
 	border: 1px solid #242C42;
 }
 
+.welcome img {
+	float: right;
+	margin: 0 0 0 2px;
+}
+
 .updates {
 	height: 475px;
-	font-size: 16px;
 	margin: 10px 10px 10px 0px;
 	border: 1px solid #242C42;
 }
@@ -95,11 +103,6 @@ html body {
 	border-right: 1px solid #242C42;
 }
 
-.wrapper-top nav ul li a:hover {
-	background: #BF616A;
-	color: #F1F1F1
-}
-
 .wrapper-middle {
 	background: #F1F1F1;
 	border: 1px solid #242C42;
@@ -122,12 +125,6 @@ section {
 	width: 100%;
 }
 
-.welcome img {
-	float: right;
-	margin: 0 0 0 2px;
-}
-
-
 /* warning */
 
 .warning {
@@ -144,8 +141,6 @@ section {
 		visibility: hidden;
 	}
 }
-
-
 
 /* girls */
 
