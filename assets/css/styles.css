@@ -27,7 +27,6 @@ p {
 	vertical-align: top;
 	box-sizing: border-box;
 	font-family: "MS PGothic";
-	image-rendering: crisp-edges;
 	font-weight: 100;
 }
 
@@ -68,10 +67,19 @@ html body {
 
 .updates {
 	height: 475px;
-	overflow: auto;
 	font-size: 16px;
 	margin: 10px 10px 10px 0px;
 	border: 1px solid #242C42;
+}
+
+.titlebar {
+	top: 0;
+	position: sticky;
+}
+
+.content{
+	max-height: calc(100% - 23px);
+	overflow: auto;
 }
 
 .wrapper-top nav ul li a {
@@ -119,6 +127,9 @@ section {
 	margin: 0 0 0 2px;
 }
 
+
+/* warning */
+
 .warning {
 	color: #F1F1F1;
 }
@@ -133,6 +144,10 @@ section {
 		visibility: hidden;
 	}
 }
+
+
+
+/* girls */
 
 .grid-container {
 	display: grid;
