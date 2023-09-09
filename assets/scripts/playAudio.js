@@ -1,5 +1,5 @@
 // Get a reference to the <h1> and <audio> elements
-const h1Element = document.getElementById("play_audio");
+const h1Element = document.getElementById("playAudio");
 const audioElement = document.getElementById("audio");
 
 // Add a click event listener to the <h1> element
