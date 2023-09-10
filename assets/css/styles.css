@@ -44,6 +44,7 @@ html body {
 .home .wrapper-top {
 	background: url('../img/banner.png') top center / cover;
 	height: 500px;
+	position: relative;
 }
 
 .wrapper-top nav ul li a:hover {
@@ -123,6 +124,17 @@ section {
 
 .pfp .content img {
 	width: 100%;
+}
+
+.nameplate{
+	font-weight: 200;
+	font-size: 80px;
+	padding: 5px;
+	background: #242C42;
+	color: #F1F1F1;
+	position: absolute;
+	bottom: 0;
+	right: 0;
 }
 
 /* warning */
