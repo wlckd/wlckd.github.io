@@ -16,6 +16,7 @@ h2 {
 }
 
 p {
+	
 	margin: 0px;
 	padding: 2px;
 	font-size: 16px;
@@ -65,10 +66,8 @@ html body {
 	border-left: 1px solid #242C42;
 }
 
-.welcome {
-	height: 250px;
-	margin: 10px 10px 10px 0px;
-	border: 1px solid #242C42;
+.welcome .content{
+	height: 225px;
 }
 
 .welcome img {
@@ -76,10 +75,13 @@ html body {
 	margin: 0 0 0 2px;
 }
 
-.updates {
-	height: 475px;
+.main-box {
 	margin: 10px 10px 10px 0px;
 	border: 1px solid #242C42;
+}
+
+.updates .content{
+	height: 455px;	
 }
 
 .titlebar {
@@ -88,7 +90,6 @@ html body {
 }
 
 .content {
-	max-height: calc(100% - 23px);
 	overflow: auto;
 }
 
@@ -123,29 +124,14 @@ section {
 	float: right;
 }
 
-.pfp .content img {
-	width: 100%;
-}
-
-.nameplate {
-	font-weight: 200;
-	font-size: 80px;
-	padding: 5px;
-	background: #242C42;
-	color: #F1F1F1;
-	position: absolute;
-	bottom: 0;
-	right: 0;
-}
-
 /* warning */
 
-.warning {
+.warning p{
+	display: inline;
 	color: #F1F1F1;
 }
 
 .blink {
-	display: inline;
 	animation: blink-animation 1s steps(2, start) infinite;
 }
 
