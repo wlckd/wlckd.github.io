@@ -1,4 +1,5 @@
-h1, h2{
+h1,
+h2 {
 	background: #242C42;
 	color: #F1F1F1;
 	margin: 0;
@@ -86,7 +87,7 @@ html body {
 	position: sticky;
 }
 
-.content{
+.content {
 	max-height: calc(100% - 23px);
 	overflow: auto;
 }
@@ -126,7 +127,7 @@ section {
 	width: 100%;
 }
 
-.nameplate{
+.nameplate {
 	font-weight: 200;
 	font-size: 80px;
 	padding: 5px;
