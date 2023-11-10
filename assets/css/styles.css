@@ -39,8 +39,13 @@ html {
 }
 
 html body {
-	width: 900px;
+	width: 770px;
 	margin: 10px auto auto auto;
+}
+
+section {
+	margin: 10px;
+	border: 1px solid #242C42
 }
 
 .home .wrapper-top {
@@ -113,10 +118,9 @@ html body {
 	grid-template-columns: 225px 1fr
 }
 
-section {
-	margin: 10px;
-	border: 1px solid #242C42
-}
+
+
+/* footer */
 
 .wrapper-footer {
 	font-size: 12px;
