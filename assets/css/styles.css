@@ -39,7 +39,7 @@ html {
 }
 
 html body {
-	width: 1000px;
+	width: 950px;
 	margin: 10px auto auto auto;
 }
 
@@ -48,9 +48,11 @@ section {
 	border: 1px solid #242C42
 }
 
+/* top */
+
 .home .wrapper-top {
-	background: url('../img/banner.png') top center / cover;
-	height: 500px;
+	background: url('../img/banner.png')  center / cover;
+	height: 125px;
 	position: relative;
 }
 
@@ -99,7 +101,7 @@ section {
   }
 
 
-
+/* main */
 
 .welcome .content{
 	height: 225px;
@@ -116,7 +118,7 @@ section {
 }
 
 .updates .content{
-	height: 455px;	
+	height: 300px;	
 }
 
 .titlebar {
@@ -128,16 +130,12 @@ section {
 	overflow: auto;
 }
 
-
-
 .wrapper-middle {
 	background: #F1F1F1;
 	border: 1px solid #242C42;
 	display: grid;
 	grid-template-columns: 225px 1fr
 }
-
-
 
 /* footer */
 
@@ -149,13 +147,17 @@ section {
 
 /* warning */
 
+.warning{
+	margin-top: 2px;
+}
+
 .warning p{
 	display: inline;
 	color: #F1F1F1;
 }
 
 .blink {
-	animation: blink-animation 1s steps(2, start) infinite;
+	animation: blink-animation 2s steps(2, start) infinite;
 }
 
 @keyframes blink-animation {
