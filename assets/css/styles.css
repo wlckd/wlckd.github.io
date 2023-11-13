@@ -178,16 +178,6 @@ section {
 		"column";
 }
 
-.ryuko {
-	grid-area: ryuko;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	overflow: hidden;
-	grid-column: span 2;
-}
-
-.ryuko img,
 .column img {
 	height: 500px;
 	object-fit: cover;
