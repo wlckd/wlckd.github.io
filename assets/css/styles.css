@@ -8,7 +8,7 @@ h2 {
 h1 {
 	padding: 0px 2px 0px 2px;
 	font-size: 12px;
-	border: 1px solid #242C42;
+	/* border: 1px solid #242C42; */
 }
 
 h2 {
@@ -49,8 +49,9 @@ html {
 }
 
 html body {
-	width: 950px;
+	width: 900px;
 	margin: 15px auto auto auto;
+	border: 1px solid #242C42;
 }
 
 section {
@@ -69,6 +70,7 @@ section {
 .wrapper-header {
 	display: flex;
 	align-items: center;
+	border-bottom: 1px solid #242C42;
 }
 
 .title {
@@ -85,13 +87,14 @@ section {
 	padding: 0;
 	margin: 0;
 	display: flex;
+	
 }
 
 .wrapper-nav li a {
 	color: #242C42;
 	background-color: #F1F1F1;
-	border: 1px solid #242C42;
-	border-left: 0px;
+	/* border: 1px solid #242C42; */
+	border-left: 1px solid #242C42;
 	font-size: 12px
 }
 
@@ -143,7 +146,6 @@ section {
 
 .wrapper-middle {
 	background: #F1F1F1;
-	border: 1px solid #242C42;
 	display: grid;
 	grid-template-columns: 192px 1fr
 }
