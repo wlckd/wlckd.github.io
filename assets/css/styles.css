@@ -62,7 +62,7 @@ section {
 /* top */
 
 .home .wrapper-top {
-	background: url('../img/banner.png') center / cover;
+	background: url('../img/banner.png') center;
 	height: 125px;
 	position: relative;
 }
