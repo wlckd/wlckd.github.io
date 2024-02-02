@@ -7,20 +7,20 @@ h2 {
 
 h1 {
 	padding: 0px 2px 0px 2px;
-	font-size: 17px;
+	font-size: 12px;
 	border: 1px solid #242C42;
 }
 
 h2 {
 	padding: 2px;
-	font-size: 15px;
+	font-size: 12px;
 }
 
 p {
 
 	margin: 0px;
 	padding: 2px;
-	font-size: 13px;
+	font-size: 12px;
 }
 
 a {
@@ -30,7 +30,7 @@ a {
 * {
 	vertical-align: top;
 	box-sizing: border-box;
-	font-family: "MS PGothic";
+	font-family: "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro", "MS PGothic";
 	font-weight: 200;
 }
 
@@ -92,7 +92,7 @@ section {
 	background-color: #F1F1F1;
 	border: 1px solid #242C42;
 	border-left: 0px;
-	font-size: 15px
+	font-size: 12px
 }
 
 .wrapper-nav li a:hover {
@@ -107,7 +107,7 @@ section {
 
 .wrapper-nav a {
 	display: block;
-	padding: 2px 0px 0px 0px;
+	/* padding: 2px 0px 0px 0px; */
 	text-decoration: none;
 }
 
@@ -145,7 +145,7 @@ section {
 	background: #F1F1F1;
 	border: 1px solid #242C42;
 	display: grid;
-	grid-template-columns: 172px 1fr
+	grid-template-columns: 192px 1fr
 }
 
 /* footer */
