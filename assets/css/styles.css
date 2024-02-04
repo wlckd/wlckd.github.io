@@ -114,6 +114,11 @@ section {
 	text-decoration: none;
 }
 
+#banner-nobu {
+	position: absolute;
+	right: 25px;
+}
+
 
 /* main */
 
