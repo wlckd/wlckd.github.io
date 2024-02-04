@@ -151,8 +151,18 @@ section {
 
 .wrapper-middle {
 	background: #F1F1F1;
+	border-top: 1px solid #242C42;
 	display: grid;
 	grid-template-columns: 192px 1fr
+}
+
+.side-by-side-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.side-by-side-container .main-box {
+	margin: 0px 5px 5px 0px;
 }
 
 /* footer */
