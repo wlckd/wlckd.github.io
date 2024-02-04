@@ -1,25 +1,18 @@
-//Event listener on loaded
 document.addEventListener("DOMContentLoaded", function () {
-    // Function to play audio by URL
-    function playAudio(audioFileUrl) {
-        // Create a new audio element
-        const audioElement = new Audio(audioFileUrl);
+    // Get the audio file URL from the first element with the "playAudio" class
+    const audioElement = new Audio(document.querySelector(".playAudio").getAttribute("data-audio"));
 
+    // Preload the audio file on page load
+    audioElement.preload = "auto";
+
+    // Add click event listener to play the audio
+    document.querySelector(".playAudio").addEventListener("click", function () {
         // Play the audio
         audioElement.play();
+    });
 
-        // Remove the audio element when playback is finished
-        audioElement.addEventListener("ended", function () {
-            audioElement.remove();
-        });
-    }
-
-    // Add click event listeners to all elements with the "playAudio" class
-    const clickableElements = document.querySelectorAll(".playAudio");
-    clickableElements.forEach(function (element) {
-        element.addEventListener("click", function () {
-            const audioFileUrl = element.getAttribute("data-audio");
-            playAudio(audioFileUrl);
-        });
+    // Remove the audio element when playback is finished
+    audioElement.addEventListener("ended", function () {
+        audioElement.remove();
     });
 });
