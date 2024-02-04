@@ -35,14 +35,11 @@
 			var intervalId;
 			var image = document.getElementById("banner-nobu");
 			var audio = new Audio('./assets/audio/hya.opus');
-			
+		
 			audio.preload = "auto";
-
+		
 			function startChanging() {
 				image.src = "./assets/img/shinobu2.png";
-				intervalId = setInterval(function () {
-					image.src = "./assets/img/shinobu2.png";
-				}, 100);
 				setTimeout(function () {
 					stopChanging();
 					audio.play();
@@ -50,10 +47,10 @@
 			}
 		
 			function stopChanging() {
-				clearInterval(intervalId);
 				image.src = "./assets/img/shinobu1.png";
 			}
 		</script>
+		
 		
 		
 
