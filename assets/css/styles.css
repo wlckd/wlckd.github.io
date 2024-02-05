@@ -164,9 +164,13 @@ section {
 }
 
 .side-by-side-container {
-	margin: -5px 0px -5px 0px;
+	margin: 5px 0px 5px 0px;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
+}
+
+.side-by-side-container .main-box {
+	margin: 0px 5px 0px 0px;
 }
 
 /* footer */
