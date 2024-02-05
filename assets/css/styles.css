@@ -49,6 +49,7 @@ html {
 }
 
 html body {
+	background: #F1F1F1;
 	width: 900px;
 	margin: 15px auto auto auto;
 	border: 1px solid #242C42;
@@ -212,4 +213,12 @@ section {
 	height: 500px;
 	object-fit: cover;
 	max-width: 100%;
+}
+
+
+
+/* full width page */
+
+.full-box {
+
 }
