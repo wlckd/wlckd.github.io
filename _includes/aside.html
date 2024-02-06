@@ -1,0 +1,48 @@
+<aside class="wrapper-aside">
+    <section class="pfp">
+        <img src="./assets/img/logo.png">
+    </section>
+    <section class="buttons">
+        <h2 class=titlebar>バッジ</h2>
+        <div class="content">
+            <marquee onmouseover="this.stop()" onmouseout="this.start()">
+                <a href="cutegirls.html"><img src="./assets/img/cuteanimegirls.gif"></a>
+                <img src="./assets/img/navi.gif">
+                <img src="./assets/img/svg.gif">
+                <img src="./assets/img/bvmm.gif">
+                <img src="./assets/img/bestvieweddesktop.gif">
+            </marquee>
+        </div>
+    </section>
+    <section>
+        <h2 class=titlebar>分からないwww</h2>
+        <div class="content">
+            <p>このサイトを作った理由が分かりません。何を載せればいいのかも分かりません。</p>
+        </div>
+    </section>
+    <section>
+        <h2 class=titlebar>連絡</h2>
+        <div class="content">
+            <p>もし連絡するが欲しい：<br>
+                <img src="./assets/img/discord.png">： wlckd<br>
+                <img src="./assets/img/mail.png">： wlckd@d3gn.net<br>
+                <img src="./assets/img/misskey.png">： @wlckd
+            </p>
+        </div>
+    </section>
+    <section class="updates">
+        <h2 class=titlebar>新着情報</h2>
+        <div class="content">
+            {% for post in site.posts %}
+            {% if post.categories contains 'update' %}
+            <section>
+                <h2 class=titlebar>{{ post.date | date: "%Y年%m月%d日" }} ({{ post.date | date: "%u" | replace:
+                    "1", "月" | replace: "2", "火" | replace: "3", "水" | replace: "4", "木" | replace: "5", "金" |
+                    replace: "6", "土" | replace: "7", "日" }})</h2>
+                <p>{{ post.content }}</p>
+            </section>
+            {% endif %}
+            {% endfor %}
+        </div>
+    </section>
+</aside>

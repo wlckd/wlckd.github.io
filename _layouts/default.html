@@ -8,16 +8,13 @@
 	<meta name="description" content="my personal site">
 	<link rel="icon" href="assets/img/favicon.png">
 	<script src="./assets/scripts/playAudio.js"></script>
-
 </head>
 
 <body class="home">
-	<link rel="stylesheet" href="assets/css/styles.css">
+	<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/styles.css">
 	<div class="wrapper-top">
-
 		<header class="wrapper-header">
 			<h1 class="title playAudio" data-audio="./assets/audio/wicked.opus"> {{ site.name }} </h1>
-
 			<nav class="wrapper-nav">
 				<ul>
 					{% for link in site.data.navigation %}
@@ -59,51 +56,7 @@
 
 	</div>
 	<div class="wrapper-middle">
-		<aside class="wrapper-aside">
-			<section class="pfp">
-				<img src="./assets/img/logo.png">
-			</section>
-			<section class="buttons">
-				<h2 class=titlebar>バッジ</h2>
-				<div class="content">
-					<marquee onmouseover="this.stop()" onmouseout="this.start()"> <a href="cutegirls.html"><img
-								src="./assets/img/cuteanimegirls.gif"></a> <img src="./assets/img/navi.gif"> <img
-							src="./assets/img/svg.gif"> <img src="./assets/img/bvmm.gif"> <img
-							src="./assets/img/sucks.gif"> <img src="./assets/img/bestvieweddesktop.gif"> </marquee>
-				</div>
-			</section>
-			<section class="idk">
-				<h2 class=titlebar>分からないwww</h2>
-				<div class="content">
-					<p>このサイトを作った理由が分かりません。何を載せればいいのかも分かりません。</p>
-				</div>
-			</section>
-			<section class="contact">
-				<h2 class=titlebar>連絡</h2>
-				<div class="content">
-					<p>もし連絡するが欲しい：<br>
-						<img src="./assets/img/discord.png">： wlckd<br>
-						<img src="./assets/img/mail.png">： wlckd@d3gn.net<br>
-						<img src="./assets/img/misskey.png">： @wlckd
-					</p>
-				</div>
-			</section>
-			<section class="updates">
-				<h2 class=titlebar>新着情報</h2>
-				<div class="content">
-					{% for post in site.posts %}
-					{% if post.categories contains 'update' %}
-					<section>
-						<h2 class=titlebar>{{ post.date | date: "%Y年%m月%d日" }} ({{ post.date | date: "%u" | replace:
-							"1", "月" | replace: "2", "火" | replace: "3", "水" | replace: "4", "木" | replace: "5", "金" |
-							replace: "6", "土" | replace: "7", "日" }})</h2>
-						<p>{{ post.content }}</p>
-					</section>
-					{% endif %}
-					{% endfor %}
-				</div>
-			</section>
-		</aside>
+		{% include aside.html %}
 		<main class="wrapper-main">
 			<section class="welcome main-box">
 				<h2 class=titlebar>ようこそ私のサイト</h2>

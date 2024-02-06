@@ -6,9 +6,8 @@
 	<meta charset="utf-8">
 	<title> wlckd. </title>
 	<meta name="description" content="my personal site">
-	<link rel="icon" href="assets/img/favicon.png">
+	<link rel="icon" href="./assets/img/favicon.png">
 	<script src="./assets/scripts/playAudio.js"></script>
-
 </head>
 
 <body class="home">
@@ -29,7 +28,7 @@
 	<main class="wrapper-main">
 		{% for post in site.posts %}
 		{% if post.categories contains 'blog' %}
-		<section class="full-box">
+		<section>
 			<h2 class=titlebar><a href="{{ post.url }}">{{ post.title}}</a>
 				<span class="post-date">{{ post.date | date: "%Y年%m月%d日" }} ({{ post.date | date: "%u" | replace: "1",
 					"月" | replace: "2", "火" | replace: "3", "水" | replace: "4", "木" | replace: "5", "金" | replace: "6",
