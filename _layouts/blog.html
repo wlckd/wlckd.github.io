@@ -7,23 +7,12 @@
 	<title> wlckd. </title>
 	<meta name="description" content="my personal site">
 	<link rel="icon" href="./assets/img/favicon.png">
-	<script src="./assets/scripts/playAudio.js"></script>
 </head>
 
 <body class="home">
 	<link rel="stylesheet" href="assets/css/styles.css">
 
-	<header class="wrapper-header">
-		<h1 class="title playAudio" data-audio="./assets/audio/wicked.opus"> {{ site.name }} </h1>
-
-		<nav class="wrapper-nav">
-			<ul>
-				{% for link in site.data.navigation %}
-				<li> <a href="{{ link.url }}">{{ link.title }}</a> </li>
-				{% endfor %}
-			</ul>
-		</nav>
-	</header>
+	{% include footer.html %}
 
 	<main class="wrapper-main">
 		{% for post in site.posts %}
@@ -42,9 +31,7 @@
 		{% endfor %}
 	</main>
 	</div>
-	<footer class="wrapper-footer">
-		wlckd 2024 | 私のコンピューターで動作は保証付きです。
-	</footer>
+	{% include footer.html %}
 </body>
 
 </html>

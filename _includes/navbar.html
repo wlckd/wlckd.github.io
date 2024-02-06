@@ -1,0 +1,11 @@
+<header class="wrapper-header">
+    <h1 class="title playAudio" data-audio="./assets/audio/wicked.opus"> {{ site.name }} </h1>
+    <script src="./assets/scripts/playAudio.js"></script>
+    <nav class="wrapper-nav">
+        <ul>
+            {% for link in site.data.navigation %}
+            <li> <a href="{{ link.url }}">{{ link.title }}</a> </li>
+            {% endfor %}
+        </ul>
+    </nav>
+</header>

@@ -7,22 +7,12 @@
 	<title> {{site.title}} </title>
 	<meta name="description" content="my personal site">
 	<link rel="icon" href="assets/img/favicon.png">
-	<script src="./assets/scripts/playAudio.js"></script>
 </head>
 
 <body class="home">
 	<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/styles.css">
 	<div class="wrapper-top">
-		<header class="wrapper-header">
-			<h1 class="title playAudio" data-audio="./assets/audio/wicked.opus"> {{ site.name }} </h1>
-			<nav class="wrapper-nav">
-				<ul>
-					{% for link in site.data.navigation %}
-					<li> <a href="{{ link.url }}">{{ link.title }}</a> </li>
-					{% endfor %}
-				</ul>
-			</nav>
-		</header>
+		{% include navbar.html %}
 
 		<img id="banner-nobu" src="./assets/img/shinobu1.png" onmousedown="startChanging()">
 
@@ -81,9 +71,7 @@
 			</div>
 		</main>
 	</div>
-	<footer class="wrapper-footer">
-		wlckd 2024 | 私のコンピューターで動作は保証付きです。
-	</footer>
+	{% include footer.html %}
 </body>
 
 </html>
