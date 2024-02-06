@@ -6,7 +6,7 @@
         <h2 class=titlebar>バッジ</h2>
         <div class="content">
             <marquee onmouseover="this.stop()" onmouseout="this.start()">
-                <a href="cutegirls.html"><img src="./assets/img/cuteanimegirls.gif"></a>
+                <img src="./assets/img/cuteanimegirls.gif">
                 <img src="./assets/img/navi.gif">
                 <img src="./assets/img/svg.gif">
                 <img src="./assets/img/bvmm.gif">
@@ -39,7 +39,7 @@
                 <h2 class=titlebar>{{ post.date | date: "%Y年%m月%d日" }} ({{ post.date | date: "%u" | replace:
                     "1", "月" | replace: "2", "火" | replace: "3", "水" | replace: "4", "木" | replace: "5", "金" |
                     replace: "6", "土" | replace: "7", "日" }})</h2>
-                <p>{{ post.content }}</p>
+                {{ post.content }}
             </section>
             {% endif %}
             {% endfor %}
