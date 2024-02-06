@@ -7,20 +7,15 @@ h2 {
 
 h1 {
 	padding: 0px 2px 0px 2px;
-	font-size: 12px;
-	/* border: 1px solid #242C42; */
 }
 
 h2 {
 	padding: 2px;
-	font-size: 12px;
 }
 
 p {
-
 	margin: 0px;
 	padding: 2px;
-	font-size: 12px;
 }
 
 a {
@@ -28,6 +23,7 @@ a {
 }
 
 * {
+	font-size: 12px;
 	vertical-align: top;
 	box-sizing: border-box;
 	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "MS PGothic";
@@ -76,13 +72,6 @@ section {
 
 .title {
 	cursor: pointer;
-	display: inline-block;
-	margin: 0px;
-}
-
-.title a {
-	color: #F1F1F1;
-	text-decoration: none;
 }
 
 .wrapper-nav {
@@ -94,20 +83,6 @@ section {
 	padding: 0;
 	margin: 0;
 	display: flex;
-
-}
-
-.wrapper-nav li a {
-	color: #242C42;
-	background-color: #F1F1F1;
-	/* border: 1px solid #242C42; */
-	border-left: 1px solid #242C42;
-	font-size: 12px
-}
-
-.wrapper-nav li a:hover {
-	color: #F1F1F1;
-	background-color: #BF616A;
 }
 
 .wrapper-nav li {
@@ -115,9 +90,19 @@ section {
 	text-align: center;
 }
 
+.wrapper-nav li a {
+	color: #242C42;
+	background-color: #F1F1F1;
+	border-left: 1px solid #242C42;
+}
+
+.wrapper-nav li a:hover {
+	color: #F1F1F1;
+	background-color: #BF616A;
+}
+
 .wrapper-nav a {
 	display: block;
-	/* padding: 2px 0px 0px 0px; */
 	text-decoration: none;
 }
 
@@ -129,13 +114,8 @@ section {
 
 /* main */
 
-.welcome .content {
-	height: 225px;
-}
-
 .welcome img {
 	float: right;
-	margin: 0 0 0 2px;
 }
 
 .main-box {
@@ -152,7 +132,7 @@ section {
 	position: sticky;
 	display: flex;
 	justify-content: space-between;
-  }
+}
 
 .titlebar a {
 	color: #F1F1F1;
@@ -163,7 +143,6 @@ section {
 }
 
 .wrapper-middle {
-	background: #F1F1F1;
 	border-top: 1px solid #242C42;
 	display: grid;
 	grid-template-columns: 192px 1fr
@@ -182,8 +161,6 @@ section {
 /* footer */
 
 .wrapper-footer {
-	font-size: 12px;
-	bottom: 2px;
 	float: right;
 }
 
@@ -206,29 +183,4 @@ section {
 	to {
 		visibility: hidden;
 	}
-}
-
-/* girls */
-
-.grid-container {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 1fr 1fr;
-	gap: 0px 0px;
-	grid-template-areas:
-		"column";
-}
-
-.column img {
-	height: 500px;
-	object-fit: cover;
-	max-width: 100%;
-}
-
-
-
-/* full width page */
-
-.full-box {
-
 }
