@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+
+    <channel>
+        <title>wlckd.</title>
+        <link>http://localhost:4000</link>
+        <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
+        <description></description>
+        <lastBuildDate>Tue, 06 Feb 2024 07:22:44 -0700</lastBuildDate>
+        
+        <item>
+            <title>古い投稿</title>
+            <link>
+                http://localhost:4000/update/2024/02/06/%E5%8F%A4%E3%81%84%E6%8A%95%E7%A8%BF.html
+            </link>
+            <description>
+                &lt;p&gt;古い投稿をJekyllの投稿にこぴーしなかった。あまりにも退屈で、それに値するものではなかった。なぜなら、古い投稿は悪かったです。&lt;/p&gt;
+
+            </description>
+            <pubDate>Tue, 06 Feb 2024 07:22:00 -0700</pubDate>
+            <guid>
+                http://localhost:4000/update/2024/02/06/%E5%8F%A4%E3%81%84%E6%8A%95%E7%A8%BF.html
+            </guid>
+        </item>
+        
+        <item>
+            <title>新しいサイト</title>
+            <link>
+                http://localhost:4000/update/2024/02/06/%E6%96%B0%E3%81%97%E3%81%84%E3%82%B5%E3%82%A4%E3%83%88.html
+            </link>
+            <description>
+                &lt;p&gt;jekyllでこのサイトに置きました。完成じゃないでも今まで好きです！更新はとてももっと簡単。&lt;/p&gt;
+
+            </description>
+            <pubDate>Tue, 06 Feb 2024 06:06:00 -0700</pubDate>
+            <guid>
+                http://localhost:4000/update/2024/02/06/%E6%96%B0%E3%81%97%E3%81%84%E3%82%B5%E3%82%A4%E3%83%88.html
+            </guid>
+        </item>
+        
+        <item>
+            <title>ロリババアに対する</title>
+            <link>
+                http://localhost:4000/blog/2024/02/05/%E3%83%AD%E3%83%AA%E3%83%90%E3%83%90%E3%82%A2%E3%81%AB%E5%AF%BE%E3%81%99%E3%82%8B.html
+            </link>
+            <description>
+                &lt;p&gt;なぜ人々はロリババアについて文句を言うのですか？人々はよく言います、「ロリババアはあまりにもありすぎる。毎アニメと漫画のトロープ。１０００歳の竜のロリ。」。
+しかし、実際にはロリババアは珍しい存在なのです。人々も言う「合法的なロリのためだけロリババアがいます。」分からない。全く別の感覚ですよね！
+強力で古代の娘は面白く、ギャップ萌え感じさせます。&lt;/p&gt;
+
+&lt;p&gt;私はロリババアが大好きです。しかし、なかなかロリババア見つけりません！アニメと漫画には数十分だけ。ロリババア中心のアニメと漫画は１０以下ですよ！
+ロリババアはとても面白い&lt;del&gt;しエロい&lt;/del&gt;でも、とても少ないなぜかな。
+&lt;a href=&quot;https://lobba.miraheze.org/wiki/The_List&quot;&gt...
+            </description>
+            <pubDate>Mon, 05 Feb 2024 06:55:11 -0700</pubDate>
+            <guid>
+                http://localhost:4000/blog/2024/02/05/%E3%83%AD%E3%83%AA%E3%83%90%E3%83%90%E3%82%A2%E3%81%AB%E5%AF%BE%E3%81%99%E3%82%8B.html
+            </guid>
+        </item>
+        
+    </channel>
+</rss>
