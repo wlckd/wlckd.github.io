@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<title> {{site.title}} </title>
+	<meta name="description" content="my personal site">
+	<link rel="icon" href="assets/img/favicon.png">
+	<script src="./assets/scripts/playAudio.js"></script>
+
+</head>
+
+<body class="home">
+	<link rel="stylesheet" href="assets/css/styles.css">
+	<div class="wrapper-top">
+
+		<header class="wrapper-header">
+			<h1 class="title playAudio" data-audio="./assets/audio/wicked.opus"> {{ site.name }} </h1>
+
+			<nav class="wrapper-nav">
+				<ul>
+				{% for link in site.data.navigation %}
+					<li> <a href="{{ link.url }}">{{ link.title }}</a> </li>
+				{% endfor %}
+				</ul>
+			</nav>
+		</header>
+
+		<img id="banner-nobu" src="./assets/img/shinobu1.png" onmousedown="startChanging()">
+
+		<script>
+			var intervalId;
+			var image = document.getElementById("banner-nobu");
+			var audio = new Audio('./assets/audio/hya.opus');
+
+			audio.preload = "auto";
+
+			var preloadImage = new Image();
+			preloadImage.src = "./assets/img/shinobu2.png";
+
+			function startChanging() {
+				image.src = preloadImage.src;
+
+				setTimeout(function () {
+					stopChanging();
+					audio.play();
+				}, 150);
+			}
+
+			function stopChanging() {
+				image.src = "./assets/img/shinobu1.png";
+			}
+		</script>
+
+		<marquee class="warning blink"><img src="./assets/img/warning.gif">
+			<p> 申し訳ありませんが、現在サイトは工事中です </p> <img src="./assets/img/warning.gif">
+		</marquee>
+
+	</div>
+	<div class="wrapper-middle">
+		<aside class="wrapper-aside">
+			<section class="pfp">
+				<img src="./assets/img/logo.png">
+			</section>
+			<section class="buttons">
+				<h2 class=titlebar>バッジ</h2>
+				<div class="content">
+					<marquee onmouseover="this.stop()" onmouseout="this.start()"> <a href="cutegirls.html"><img
+								src="./assets/img/cuteanimegirls.gif"></a> <img src="./assets/img/navi.gif"> <img
+							src="./assets/img/svg.gif"> <img src="./assets/img/bvmm.gif"> <img
+							src="./assets/img/sucks.gif"> <img src="./assets/img/bestvieweddesktop.gif"> </marquee>
+				</div>
+			</section>
+			<section class="idk">
+				<h2 class=titlebar>分からないwww</h2>
+				<div class="content">
+					<p>このサイトを作った理由が分かりません。何を載せればいいのかも分かりません。</p>
+				</div>
+			</section>
+			<section class="idk">
+				<h2 class=titlebar>連絡</h2>
+				<div class="content">
+					<p>もし連絡するが欲しい：<br>
+						<img src="./assets/img/discord.png">： wlckd<br>
+						<img src="./assets/img/mail.png">： wlckd@d3gn.net<br>
+						<img src="./assets/img/misskey.png">： @wlckd
+					</p>
+				</div>
+			</section>
+			<section class="updates">
+				<h2 class=titlebar>新着情報</h2>
+				<div class="content">
+					{% for post in site.posts %}
+						{% if post.categories contains 'update' %}
+							<section>
+								<h2 class=titlebar>{{ post.date | date: "%Y年%m月%d日" }} ({{ post.date | date: "%u" | replace: "1", "月" | replace: "2", "火" | replace: "3", "水" | replace: "4", "木" | replace: "5", "金" | replace: "6", "土" | replace: "7", "日" }})</h2>
+								<p>{{ post.content }}</p>
+							</section>
+						{% endif %}
+					{% endfor %}
+				</div>
+			</section>
+		</aside>
+		<main class="wrapper-main">
+			<section class="welcome main-box">
+				<h2 class=titlebar>ようこそ私のサイト</h2>
+				<div class="content">
+					<img src="./assets/img/smile.gif">
+					<p>このは私のサイト。ようこそ！ここが色々なものがあります、でも何が投稿を置くはわかりません、なので置くなものはゴミ。あなたは恐らく見たいない。</p>
+				</div>
+			</section>
+			<div class="side-by-side-container">
+				<section class="main-box">
+					<h2 class=titlebar>文法や単語</h2>
+					<div class="content">
+						<p>もし文法や単語にエラーがあれば、教えてください！私の日本語はまだとても悪い、でも学ぶことに頑張ります！連絡先は左側にあります。</p>
+					</div>
+				</section>
+				<section class="main-box">
+					<h2 class=titlebar>長めの投稿</h2>
+					<div class="content">
+						<p>長めの投稿を書き始めました。<a href="blog.html">ここで読む。</a></p>
+					</div>
+				</section>
+			</div>
+		</main>
+	</div>
+	<footer class="wrapper-footer">
+		wlckd 2024 | 私のコンピューターで動作は保証付きです。
+	</footer>
+</body>
+
+</html>
