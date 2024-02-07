@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<title> wlckd. </title>
+	<meta name="description" content="my personal site">
+	<link rel="icon" href="./assets/img/favicon.png">
+</head>
+
+<body class="home">
+	<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/styles.css">
+
+	{% include navbar.html %}
+
+	<main class="wrapper-main">
+		<section>
+			<h2 class=titlebar>{{ page.title}}
+				<span class="post-date">{{ page.date | date: "%Y年%m月%d日" }} ({{ post.date | date: "%u" | replace: "1",
+					"月" | replace: "2", "火" | replace: "3", "水" | replace: "4", "木" | replace: "5", "金" | replace: "6",
+					"土" | replace: "7", "日" }})</span>
+			</h2>
+			<div class="content">
+				{{page.content}}
+			</div>
+		</section>
+	</main>
+	</div>
+	{% include footer.html %}
+</body>
+
+</html>

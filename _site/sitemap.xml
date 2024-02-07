@@ -4,28 +4,28 @@
     
     <url>
         <loc>/blog.html</loc>
-        <lastmod>2024-02-06</lastmod>
+        <lastmod>2024-02-07</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
     
     <url>
         <loc>/feed.xml</loc>
-        <lastmod>2024-02-06</lastmod>
+        <lastmod>2024-02-07</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
     
     <url>
         <loc>/</loc>
-        <lastmod>2024-02-06</lastmod>
+        <lastmod>2024-02-07</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
     
     <url>
         <loc>/sitemap.xml</loc>
-        <lastmod>2024-02-06</lastmod>
+        <lastmod>2024-02-07</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
@@ -33,29 +33,36 @@
 
     
     <url>
+        <loc>/blog/2024/02/07/%E5%80%8B%E4%BA%BA%E3%82%B5%E3%82%A4%E3%83%88.html</loc>
+        <lastmod>2024-02-07</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
         <loc>/update/2024/02/06/%E3%83%96%E3%83%AD%E3%82%B0.html</loc>
-        <lastmod>2024-02-06</lastmod>
+        <lastmod>2024-02-07</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
     
     <url>
         <loc>/update/2024/02/06/%E5%8F%A4%E3%81%84%E6%8A%95%E7%A8%BF.html</loc>
-        <lastmod>2024-02-06</lastmod>
+        <lastmod>2024-02-07</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
     
     <url>
         <loc>/update/2024/02/06/%E6%96%B0%E3%81%97%E3%81%84%E3%82%B5%E3%82%A4%E3%83%88.html</loc>
-        <lastmod>2024-02-06</lastmod>
+        <lastmod>2024-02-07</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
     
     <url>
         <loc>/blog/2024/02/05/%E3%83%AD%E3%83%AA%E3%83%90%E3%83%90%E3%82%A2%E3%81%AB%E5%AF%BE%E3%81%99%E3%82%8B.html</loc>
-        <lastmod>2024-02-06</lastmod>
+        <lastmod>2024-02-07</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>

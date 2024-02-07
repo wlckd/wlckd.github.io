@@ -123,6 +123,7 @@ section {
 }
 
 .main-box {
+	position: relative;
 	margin: 5px 5px 5px 0px;
 }
 
@@ -131,8 +132,6 @@ section {
 }
 
 .titlebar {
-	top: 0;
-	position: sticky;
 	display: flex;
 	justify-content: space-between;
 }

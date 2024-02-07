@@ -10,7 +10,7 @@
 </head>
 
 <body class="home">
-	<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/styles.css">
+	<link rel="stylesheet" href="./assets/css/styles.css">
 	<div class="wrapper-top">
 		{% include navbar.html %}
 
@@ -69,6 +69,35 @@
 					</div>
 				</section>
 			</div>
+			{% assign latest_blog_post = nil %}
+
+			{% for post in site.posts %}
+				{% if post.categories contains 'blog' %}
+					{% if latest_blog_post == nil or post.date > latest_blog_post.date %}
+						{% assign latest_blog_post = post %}
+					{% endif %}
+				{% endif %}
+			{% endfor %}
+
+			{% if latest_blog_post %}
+			<section class="main-box">
+				<h2 class=titlebar>最近ブログ投稿</h2>
+				<div class="content">
+					<section>
+						<h2 class=titlebar><a href="{{ latest_blog_post.url }}">{{ latest_blog_post.title }}</a>
+							<span class="post-date">{{ latest_blog_post.date | date: "%Y年%m月%d日" }} ({{ latest_blog_post.date | date: "%u" | replace: "1",
+								"月" | replace: "2", "火" | replace: "3", "水" | replace: "4", "木" | replace: "5", "金" | replace: "6",
+								"土" | replace: "7", "日" }})</span>
+						</h2>
+						<div class="content">
+							{{ latest_blog_post.excerpt }}
+						</div>
+					</section>
+				</div>
+			</section>
+			{% else %}
+			<p>No blog posts found.</p>
+			{% endif %}
 		</main>
 	</div>
 	{% include footer.html %}
