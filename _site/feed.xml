@@ -6,7 +6,7 @@
         <link>http://localhost:4000</link>
         <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
         <description></description>
-        <lastBuildDate>Wed, 07 Feb 2024 09:46:51 -0700</lastBuildDate>
+        <lastBuildDate>Wed, 07 Feb 2024 10:02:14 -0700</lastBuildDate>
         
         <item>
             <title>個人サイト</title>
@@ -20,7 +20,7 @@
 &lt;p&gt;これとても悲しい。現代のインターネットは寂しく、無機質な場所で、まるで地獄のようだ。私の日本語ではこの話題は複雑過ぎるだから、ここで終える。&lt;/p&gt;
 
             </description>
-            <pubDate>Wed, 07 Feb 2024 00:00:00 -0700</pubDate>
+            <pubDate>Wed, 07 Feb 2024 02:50:00 -0700</pubDate>
             <guid>
                 http://localhost:4000/blog/2024/02/07/%E5%80%8B%E4%BA%BA%E3%82%B5%E3%82%A4%E3%83%88.html
             </guid>

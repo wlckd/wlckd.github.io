@@ -6,13 +6,13 @@
 	<meta charset="utf-8">
 	<title> wlckd. </title>
 	<meta name="description" content="my personal site">
-	<link rel="icon" href="./assets/img/favicon.png">
+	<link rel="icon" href="assets/img/favicon.png">
 </head>
 
 <body class="home">
-	<link rel="stylesheet" href="assets/css/styles.css">
-
-	<header class="wrapper-header">
+	<link rel="stylesheet" href="./assets/css/styles.css">
+	<div class="wrapper-top">
+		<header class="wrapper-header">
     <h1 class="title playAudio" data-audio="./assets/audio/wicked.opus"> wlckd.d3gn.net </h1>
     <script src="./assets/scripts/playAudio.js"></script>
     <nav class="wrapper-nav">
@@ -26,36 +26,135 @@
     </nav>
 </header>
 
-	<main class="wrapper-main">
-		
-		
-		<section>
-			<h2 class=titlebar><a href="/blog/2024/02/07/%E5%80%8B%E4%BA%BA%E3%82%B5%E3%82%A4%E3%83%88.html">個人サイト</a>
-				<span class="post-date">2024年02月07日 (水)</span>
-			</h2>
-			<div class="content">
-				<p>個人サイトの作るや閲覧はどちらもとても楽しい。では、なぜ個人サイトは珍しい何ですか？皆さんはSNSが大嫌い、でも皆さんSNSを使う。これはなぜでしょうか？なぜ誰も個人サイトを作らないのですか？それぞれのサイトは異なり、面白い。
+		<img id="banner-nobu" src="./assets/img/shinobu1.png" onmousedown="startChanging()">
+
+		<script>
+			var intervalId;
+			var image = document.getElementById("banner-nobu");
+			var audio = new Audio('./assets/audio/hya.opus');
+
+			audio.preload = "auto";
+
+			var preloadImage = new Image();
+			preloadImage.src = "./assets/img/shinobu2.png";
+
+			function startChanging() {
+				image.src = preloadImage.src;
+
+				setTimeout(function () {
+					stopChanging();
+					audio.play();
+				}, 150);
+			}
+
+			function stopChanging() {
+				image.src = "./assets/img/shinobu1.png";
+			}
+		</script>
+
+		<marquee class="warning blink"><img src="./assets/img/warning.gif">
+			<p> 申し訳ありませんが、現在サイトは工事中です </p> <img src="./assets/img/warning.gif">
+		</marquee>
+
+	</div>
+	<div class="wrapper-middle">
+		<aside class="wrapper-aside">
+    <section class="pfp">
+        <img src="./assets/img/logo.png">
+    </section>
+    <section class="buttons">
+        <h2 class=titlebar>バッジ</h2>
+        <div class="content">
+            <marquee onmouseover="this.stop()" onmouseout="this.start()">
+                <img src="./assets/img/cuteanimegirls.gif">
+                <img src="./assets/img/navi.gif">
+                <img src="./assets/img/svg.gif">
+                <img src="./assets/img/bvmm.gif">
+                <img src="./assets/img/bestvieweddesktop.gif">
+            </marquee>
+        </div>
+    </section>
+    <section>
+        <h2 class=titlebar>分からないwww</h2>
+        <div class="content">
+            <p>このサイトを作った理由が分かりません。何を載せればいいのかも分かりません。</p>
+        </div>
+    </section>
+    <section>
+        <h2 class=titlebar>連絡</h2>
+        <div class="content">
+            <p>もし連絡するが欲しい：<br>
+                <img src="./assets/img/discord.png">： wlckd<br>
+                <img src="./assets/img/mail.png">： wlckd@d3gn.net<br>
+                <img src="./assets/img/misskey.png">： @wlckd
+            </p>
+        </div>
+    </section>
+    <section class="updates">
+        <h2 class=titlebar>新着情報</h2>
+        <div class="content">
+            
+            
+            
+            
+            <section>
+                <h2 class=titlebar>2024年02月06日 (火)</h2>
+                <p>ブログページを追加しました。遂に、２つ目のページ！長い投稿まだとても大変、でも練習が必要。</p>
+
+            </section>
+            
+            
+            
+            <section>
+                <h2 class=titlebar>2024年02月06日 (火)</h2>
+                <p>古い投稿をJekyllの投稿にこぴーしなかった。あまりにも退屈で、それに値するものではなかった。なぜなら、古い投稿は悪かったです。</p>
+
+            </section>
+            
+            
+            
+            <section>
+                <h2 class=titlebar>2024年02月06日 (火)</h2>
+                <p>jekyllでこのサイトに置きました。完成じゃないでも今まで好きです！更新はとてももっと簡単。</p>
+
+            </section>
+            
+            
+            
+            
+        </div>
+    </section>
+</aside>
+		<main class="wrapper-main">
+			
+			
+			<section class="main-box">
+				<h2 class=titlebar>個人サイト
+					<span class="post-date">2024年02月07日 (水)</span>
+				</h2>
+				<div class="content">
+					<p>個人サイトの作るや閲覧はどちらもとても楽しい。では、なぜ個人サイトは珍しい何ですか？皆さんはSNSが大嫌い、でも皆さんSNSを使う。これはなぜでしょうか？なぜ誰も個人サイトを作らないのですか？それぞれのサイトは異なり、面白い。
 なぜこれを見捨てるのですか？</p>
 
 <p>これとても悲しい。現代のインターネットは寂しく、無機質な場所で、まるで地獄のようだ。私の日本語ではこの話題は複雑過ぎるだから、ここで終える。</p>
 
-			</div>
-		</section>
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		<section>
-			<h2 class=titlebar><a href="/blog/2024/02/05/%E3%83%AD%E3%83%AA%E3%83%90%E3%83%90%E3%82%A2%E3%81%AB%E5%AF%BE%E3%81%99%E3%82%8B.html">ロリババアに対する</a>
-				<span class="post-date">2024年02月05日 (月)</span>
-			</h2>
-			<div class="content">
-				<p>なぜ人々はロリババアについて文句を言うのですか？人々はよく言います、「ロリババアはあまりにもありすぎる。毎アニメと漫画のトロープ。１０００歳の竜のロリ。」。
+				</div>
+			</section>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			<section class="main-box">
+				<h2 class=titlebar>ロリババアに対する
+					<span class="post-date">2024年02月05日 (月)</span>
+				</h2>
+				<div class="content">
+					<p>なぜ人々はロリババアについて文句を言うのですか？人々はよく言います、「ロリババアはあまりにもありすぎる。毎アニメと漫画のトロープ。１０００歳の竜のロリ。」。
 しかし、実際にはロリババアは珍しい存在なのです。人々も言う「合法的なロリのためだけロリババアがいます。」分からない。全く別の感覚ですよね！
 強力で古代の娘は面白く、ギャップ萌え感じさせます。</p>
 
@@ -68,11 +167,11 @@
 
 <p>ロリババア中心のアニメと漫画が存じ、教えてください！</p>
 
-			</div>
-		</section>
-		
-		
-	</main>
+				</div>
+			</section>
+			
+			
+		</main>
 	</div>
 	<footer class="wrapper-footer">
     wlckd 2024 | 私のコンピューターで動作は保証付きです。
