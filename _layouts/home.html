@@ -83,14 +83,16 @@
 			<section class="main-box">
 				<h2 class=titlebar>最近ブログ投稿</h2>
 				<div class="content">
+					<p>これは私のブログ投稿。全部の投稿は無価値で、ただ練習のために。</p>
 					<section>
-						<h2 class=titlebar><a href="{{ latest_blog_post.url }}">{{ latest_blog_post.title }}</a>
+						<h2 class=titlebar>{{ latest_blog_post.title }}
 							<span class="post-date">{{ latest_blog_post.date | date: "%Y年%m月%d日" }} ({{ latest_blog_post.date | date: "%u" | replace: "1",
 								"月" | replace: "2", "火" | replace: "3", "水" | replace: "4", "木" | replace: "5", "金" | replace: "6",
 								"土" | replace: "7", "日" }})</span>
 						</h2>
 						<div class="content">
 							{{ latest_blog_post.excerpt }}
+							<a href="{{ latest_blog_post.url }}">もっと読む</a>
 						</div>
 					</section>
 				</div>

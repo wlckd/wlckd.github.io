@@ -6,7 +6,39 @@
         <link>http://localhost:4000</link>
         <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
         <description></description>
-        <lastBuildDate>Wed, 07 Feb 2024 10:02:14 -0700</lastBuildDate>
+        <lastBuildDate>Tue, 13 Feb 2024 17:03:28 -0700</lastBuildDate>
+        
+        <item>
+            <title>書くものがない</title>
+            <link>
+                http://localhost:4000/update/2024/02/13/%E6%9B%B8%E3%81%8F%E3%82%82%E3%81%AE%E3%81%8C%E3%81%AA%E3%81%84.html
+            </link>
+            <description>
+                &lt;p&gt;書くものがない、しかし書くは必要練習のために。&lt;/p&gt;
+
+            </description>
+            <pubDate>Tue, 13 Feb 2024 14:18:00 -0700</pubDate>
+            <guid>
+                http://localhost:4000/update/2024/02/13/%E6%9B%B8%E3%81%8F%E3%82%82%E3%81%AE%E3%81%8C%E3%81%AA%E3%81%84.html
+            </guid>
+        </item>
+        
+        <item>
+            <title>なんで日本語を勉強する？</title>
+            <link>
+                http://localhost:4000/blog/2024/02/13/%E3%81%AA%E3%82%93%E3%81%A7%E6%97%A5%E6%9C%AC%E8%AA%9E%E3%82%92%E5%8B%89%E5%BC%B7%E3%81%99%E3%82%8B.html
+            </link>
+            <description>
+                &lt;p&gt;なぜ私は日本語を勉強するのか？元々、たくさんのアニメは見ましたから。でも最近はあまり見ません。今はむしろ,日本語の勉強が私の優先です。いいアニメは大半を見ました。日本語はとても難しいや私はとても下手。そしてなぜ私の趣味は日本語を勉強のですか？分かりません！&lt;/p&gt;
+
+&lt;p&gt;正確に覚えていれば,2017年にアニメを見ました初めて。私の友達お勧めました。好きでした！でも、ローカリゼーションが大嫌い。そして、その後の年に友達が私に元の言語を学ぶを進め、それが日本語を勉強は始まりました。最初の数年間、不定期に練習していましたが、実際にはどこにも進展しませんでした。数年前にちゃんと勉強を始まりました。でもまだとても上手じゃない。&lt;/p&gt;
+
+            </description>
+            <pubDate>Tue, 13 Feb 2024 10:00:00 -0700</pubDate>
+            <guid>
+                http://localhost:4000/blog/2024/02/13/%E3%81%AA%E3%82%93%E3%81%A7%E6%97%A5%E6%9C%AC%E8%AA%9E%E3%82%92%E5%8B%89%E5%BC%B7%E3%81%99%E3%82%8B.html
+            </guid>
+        </item>
         
         <item>
             <title>個人サイト</title>
