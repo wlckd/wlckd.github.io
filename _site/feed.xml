@@ -6,7 +6,22 @@
         <link>http://localhost:4000</link>
         <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
         <description></description>
-        <lastBuildDate>Tue, 13 Feb 2024 17:03:28 -0700</lastBuildDate>
+        <lastBuildDate>Thu, 29 Feb 2024 05:15:50 -0700</lastBuildDate>
+        
+        <item>
+            <title>ガラケー</title>
+            <link>
+                http://localhost:4000/update/2024/02/29/%E3%82%AC%E3%83%A9%E3%82%B1%E3%83%BC.html
+            </link>
+            <description>
+                &lt;p&gt;私のスマホにうんざりしています。だから、ガラケーを買った。アンドロイドが動いているので、まだ地図を使えます。&lt;/p&gt;
+
+            </description>
+            <pubDate>Thu, 29 Feb 2024 05:04:00 -0700</pubDate>
+            <guid>
+                http://localhost:4000/update/2024/02/29/%E3%82%AC%E3%83%A9%E3%82%B1%E3%83%BC.html
+            </guid>
+        </item>
         
         <item>
             <title>書くものがない</title>
