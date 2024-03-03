@@ -1,5 +1,5 @@
 ---
 title: ブログ
 layout: default
-permalink: blog
+permalink: /blog/
 ---
