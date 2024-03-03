@@ -1,0 +1,15 @@
+
+{% for post in site.posts %}
+{% if post.categories contains 'blog' %}
+<section class="main-box">
+	<h2 class=titlebar>{{ post.title}}
+		<span class="post-date">{{ post.date | date: "%Y年%m月%d日" }} ({{ post.date | date: "%u" | replace: "1",
+			"月" | replace: "2", "火" | replace: "3", "水" | replace: "4", "木" | replace: "5", "金" | replace: "6",
+			"土" | replace: "7", "日" }})</span>
+	</h2>
+	<div class="content">
+		{{post.content}}
+	</div>
+</section>
+{% endif %}
+{% endfor %}

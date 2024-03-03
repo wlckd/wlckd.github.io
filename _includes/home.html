@@ -1,0 +1,51 @@
+<section class="welcome main-box">
+    <h2 class=titlebar>ようこそ私のサイト</h2>
+    <div class="content">
+        <img src="{{site.baseurl}}/assets/img/smile.gif">
+        <p>このは私のサイト。ようこそ！ここが色々なものがあります、でも何が投稿を置くはわかりません、なので置くなものはゴミ。あなたは恐らく見たいない。</p>
+    </div>
+</section>
+<div class="side-by-side-container">
+    <section class="main-box">
+        <h2 class=titlebar>文法や単語</h2>
+        <div class="content">
+            <p>もし文法や単語にエラーがあれば、教えてください！私の日本語はまだとても悪い、でも学ぶことに頑張ります！連絡先は左側にあります。</p>
+        </div>
+    </section>
+    <section class="main-box">
+        <h2 class=titlebar>長めの投稿</h2>
+        <div class="content">
+            <p>長めの投稿を書き始めました。<a href="{{site.baseurl}}/blog">ここで読む。</a></p>
+        </div>
+    </section>
+</div>
+{% assign latest_blog_post = nil %}
+
+{% for post in site.posts %}
+    {% if post.categories contains 'blog' %}
+        {% if latest_blog_post == nil or post.date > latest_blog_post.date %}
+            {% assign latest_blog_post = post %}
+        {% endif %}
+    {% endif %}
+{% endfor %}
+
+{% if latest_blog_post %}
+<section class="main-box">
+    <h2 class=titlebar>最近ブログ投稿</h2>
+    <div class="content">
+        <p>これは私のブログ投稿。全部の投稿は無価値で、ただ練習のために。</p>
+        <section>
+            <h2 class=titlebar>{{ latest_blog_post.title }}
+                <span class="post-date">{{ latest_blog_post.date | date: "%Y年%m月%d日" }} ({{ latest_blog_post.date | date: "%u" | replace: "1",
+                    "月" | replace: "2", "火" | replace: "3", "水" | replace: "4", "木" | replace: "5", "金" | replace: "6",
+                    "土" | replace: "7", "日" }})</span>
+            </h2>
+            <div class="content">
+                {{ latest_blog_post.content }}
+            </div>
+        </section>
+    </div>
+</section>
+{% else %}
+<p>No blog posts found.</p>
+{% endif %}

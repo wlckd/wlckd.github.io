@@ -1,5 +1,5 @@
 ---
 title: ブログ
-slug: blog
-layout: blog
+layout: default
+permalink: blog
 ---

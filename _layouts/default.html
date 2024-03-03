@@ -1,0 +1,16 @@
+{% include header.html %}
+	<div class="wrapper-middle">
+		{% include aside.html %}
+		<main class="wrapper-main">
+				{% if page.permalink == "/" %}
+					{%include home.html %}
+				{% endif %}
+
+				{% if page.permalink == "blog" %}
+					{% include blog.html %}
+				{% endif %}
+
+				{{content}}
+		</main>
+	</div>
+{% include footer.html %}

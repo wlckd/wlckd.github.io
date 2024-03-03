@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<title> {{site.title}} </title>
+	<meta name="description" content="my personal site">
+	<link rel="icon" href="{{site.baseurl}}/assets/img/favicon.png">
+</head>
+
+<body class="home">
+	<link rel="stylesheet" href="{{site.baseurl}}/assets/css/styles.css">
+	<div class="wrapper-top">
+		{% include navbar.html %}
+
+		<img id="banner-nobu" src="{{site.baseurl}}/assets/img/shinobu1.png" onmousedown="startChanging()">
+
+		<script src="{{site.baseurl}}/assets/scripts/hya.js"></script>
+
+		<marquee class="warning blink"><img src="{{site.baseurl}}/assets/img/warning.gif">
+			<p> 申し訳ありませんが、現在サイトは工事中です </p> <img src="{{site.baseurl}}/assets/img/warning.gif">
+		</marquee>
+
+	</div>

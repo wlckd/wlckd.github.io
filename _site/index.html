@@ -6,71 +6,49 @@
 	<meta charset="utf-8">
 	<title> wlckd. </title>
 	<meta name="description" content="my personal site">
-	<link rel="icon" href="assets/img/favicon.png">
+	<link rel="icon" href="/assets/img/favicon.png">
 </head>
 
 <body class="home">
-	<link rel="stylesheet" href="./assets/css/styles.css">
+	<link rel="stylesheet" href="/assets/css/styles.css">
 	<div class="wrapper-top">
 		<header class="wrapper-header">
-    <h1 class="title playAudio" data-audio="./assets/audio/wicked.opus"> wlckd.d3gn.net </h1>
-    <script src="./assets/scripts/playAudio.js"></script>
+    <h1 class="title playAudio" data-audio="/assets/audio/wicked.opus"> wlckd.d3gn.net </h1>
+    <script src="/assets/scripts/playAudio.js"></script>
     <nav class="wrapper-nav">
         <ul>
             
-            <li> <a href="/index.html">ホームページ</a> </li>
+            <li> <a href="/">ホームページ</a> </li>
             
-            <li> <a href="/blog.html">ブログ</a> </li>
+            <li> <a href="/blog/">ブログ</a> </li>
             
         </ul>
     </nav>
 </header>
 
-		<img id="banner-nobu" src="./assets/img/shinobu1.png" onmousedown="startChanging()">
+		<img id="banner-nobu" src="/assets/img/shinobu1.png" onmousedown="startChanging()">
 
-		<script>
-			var intervalId;
-			var image = document.getElementById("banner-nobu");
-			var audio = new Audio('./assets/audio/hya.opus');
+		<script src="/assets/scripts/hya.js"></script>
 
-			audio.preload = "auto";
-
-			var preloadImage = new Image();
-			preloadImage.src = "./assets/img/shinobu2.png";
-
-			function startChanging() {
-				image.src = preloadImage.src;
-
-				setTimeout(function () {
-					stopChanging();
-					audio.play();
-				}, 150);
-			}
-
-			function stopChanging() {
-				image.src = "./assets/img/shinobu1.png";
-			}
-		</script>
-
-		<marquee class="warning blink"><img src="./assets/img/warning.gif">
-			<p> 申し訳ありませんが、現在サイトは工事中です </p> <img src="./assets/img/warning.gif">
+		<marquee class="warning blink"><img src="/assets/img/warning.gif">
+			<p> 申し訳ありませんが、現在サイトは工事中です </p> <img src="/assets/img/warning.gif">
 		</marquee>
 
 	</div>
 	<div class="wrapper-middle">
 		<aside class="wrapper-aside">
     <section class="pfp">
-        <img src="./assets/img/logo.png">
+        <img src="/assets/img/logo.png">
     </section>
     <section class="buttons">
         <h2 class=titlebar>バッジ</h2>
         <div class="content">
             <marquee onmouseover="this.stop()" onmouseout="this.start()">
-                <img src="./assets/img/cuteanimegirls.gif">
-                <img src="./assets/img/navi.gif">
-                <img src="./assets/img/svg.gif">
-                <img src="./assets/img/bvmm.gif">
-                <img src="./assets/img/bestvieweddesktop.gif">
+                <img src="/assets/img/cuteanimegirls.gif">
+                <img src="/assets/img/navi.gif">
+                <img src="/assets/img/svg.gif">
+                <img src="/assets/img/bvmm.gif">
+                <img src="/assets/img/bestvieweddesktop.gif">
             </marquee>
         </div>
     </section>
@@ -84,9 +62,9 @@
         <h2 class=titlebar>連絡</h2>
         <div class="content">
             <p>もし連絡するが欲しい：<br>
-                <img src="./assets/img/discord.png">： wlckd<br>
-                <img src="./assets/img/mail.png">： wlckd@d3gn.net<br>
-                <img src="./assets/img/misskey.png">： @wlckd
+                <img src="/assets/img/discord.png">： wlckd<br>
+                <img src="/assets/img/mail.png">： wlckd@d3gn.net<br>
+                <img src="/assets/img/misskey.png">： @wlckd
             </p>
         </div>
     </section>
@@ -144,54 +122,61 @@
     </section>
 </aside>
 		<main class="wrapper-main">
-			<section class="welcome main-box">
-				<h2 class=titlebar>ようこそ私のサイト</h2>
-				<div class="content">
-					<img src="./assets/img/smile.gif">
-					<p>このは私のサイト。ようこそ！ここが色々なものがあります、でも何が投稿を置くはわかりません、なので置くなものはゴミ。あなたは恐らく見たいない。</p>
-				</div>
-			</section>
-			<div class="side-by-side-container">
-				<section class="main-box">
-					<h2 class=titlebar>文法や単語</h2>
-					<div class="content">
-						<p>もし文法や単語にエラーがあれば、教えてください！私の日本語はまだとても悪い、でも学ぶことに頑張ります！連絡先は左側にあります。</p>
-					</div>
-				</section>
-				<section class="main-box">
-					<h2 class=titlebar>長めの投稿</h2>
-					<div class="content">
-						<p>長めの投稿を書き始めました。<a href="blog.html">ここで読む。</a></p>
-					</div>
-				</section>
-			</div>
-			
+				
+					<section class="welcome main-box">
+    <h2 class=titlebar>ようこそ私のサイト</h2>
+    <div class="content">
+        <img src="/assets/img/smile.gif">
+        <p>このは私のサイト。ようこそ！ここが色々なものがあります、でも何が投稿を置くはわかりません、なので置くなものはゴミ。あなたは恐らく見たいない。</p>
+    </div>
+</section>
+<div class="side-by-side-container">
+    <section class="main-box">
+        <h2 class=titlebar>文法や単語</h2>
+        <div class="content">
+            <p>もし文法や単語にエラーがあれば、教えてください！私の日本語はまだとても悪い、でも学ぶことに頑張ります！連絡先は左側にあります。</p>
+        </div>
+    </section>
+    <section class="main-box">
+        <h2 class=titlebar>長めの投稿</h2>
+        <div class="content">
+            <p>長めの投稿を書き始めました。<a href="/blog">ここで読む。</a></p>
+        </div>
+    </section>
+</div>
 
-			
 
-			
-			<section class="main-box">
-				<h2 class=titlebar>最近ブログ投稿</h2>
-				<div class="content">
-					<p>これは私のブログ投稿。全部の投稿は無価値で、ただ練習のために。</p>
-					<section>
-						<h2 class=titlebar>なんで日本語を勉強する？
-							<span class="post-date">2024年02月13日 (火)</span>
-						</h2>
-						<div class="content">
-							<p>なぜ私は日本語を勉強するのか？元々、たくさんのアニメは見ましたから。でも最近はあまり見ません。今はむしろ,日本語の勉強が私の優先です。いいアニメは大半を見ました。日本語はとても難しいや私はとても下手。そしてなぜ私の趣味は日本語を勉強のですか？分かりません！</p>
 
-							<a href="/blog/2024/02/13/%E3%81%AA%E3%82%93%E3%81%A7%E6%97%A5%E6%9C%AC%E8%AA%9E%E3%82%92%E5%8B%89%E5%BC%B7%E3%81%99%E3%82%8B.html">もっと読む</a>
-						</div>
-					</section>
-				</div>
-			</section>
-			
+
+
+<section class="main-box">
+    <h2 class=titlebar>最近ブログ投稿</h2>
+    <div class="content">
+        <p>これは私のブログ投稿。全部の投稿は無価値で、ただ練習のために。</p>
+        <section>
+            <h2 class=titlebar>なんで日本語を勉強する？
+                <span class="post-date">2024年02月13日 (火)</span>
+            </h2>
+            <div class="content">
+                <p>なぜ私は日本語を勉強するのか？元々、たくさんのアニメは見ましたから。でも最近はあまり見ません。今はむしろ,日本語の勉強が私の優先です。いいアニメは大半を見ました。日本語はとても難しいや私はとても下手。そしてなぜ私の趣味は日本語を勉強のですか？分かりません！</p>
+
+<p>正確に覚えていれば,2017年にアニメを見ました初めて。私の友達お勧めました。好きでした！でも、ローカリゼーションが大嫌い。そして、その後の年に友達が私に元の言語を学ぶを進め、それが日本語を勉強は始まりました。最初の数年間、不定期に練習していましたが、実際にはどこにも進展しませんでした。数年前にちゃんと勉強を始まりました。でもまだとても上手じゃない。</p>
+
+            </div>
+        </section>
+    </div>
+</section>
+
+				
+
+				
+
+				
+
 		</main>
 	</div>
-	<footer class="wrapper-footer">
+<footer class="wrapper-footer">
     wlckd 2024 | 私のコンピューターで動作は保証付きです。
 </footer>
 </body>
-
 </html>
