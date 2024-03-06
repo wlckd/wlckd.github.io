@@ -10,6 +10,10 @@
 					{% include blog.html %}
 				{% endif %}
 
+				{% if page.permalink == "/404.html" %}
+					{% include 404.html %}
+				{% endif %}
+
 				{{content}}
 		</main>
 	</div>

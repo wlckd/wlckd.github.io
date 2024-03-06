@@ -128,10 +128,6 @@
   
   /* main */
   
-  .welcome img {
-	float: right;
-  }
-  
   .main-box {
 	position: relative;
 	margin: 5px 5px 5px 0;
