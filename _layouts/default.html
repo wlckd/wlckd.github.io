@@ -1,20 +1,24 @@
-{% include header.html %}
+{% include /sections/header.html %}
 	<div class="wrapper-middle">
-		{% include aside.html %}
+		{% include /sections/aside.html %}
 		<main class="wrapper-main">
 				{% if page.permalink == "/" %}
-					{%include home.html %}
+					{%include /pages/home.html %}
 				{% endif %}
 
 				{% if page.permalink == "/blog/" %}
-					{% include blog.html %}
+					{% include /pages/blog.html %}
 				{% endif %}
 
 				{% if page.permalink == "/404.html" %}
-					{% include 404.html %}
+					{% include /pages/404.html %}
+				{% endif %}
+
+				{% if page.permalink == "/girls/" %}
+					{% include /pages/girls.html %}
 				{% endif %}
 
 				{{content}}
 		</main>
 	</div>
-{% include footer.html %}
+{% include /sections/footer.html %}

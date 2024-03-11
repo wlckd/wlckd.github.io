@@ -157,19 +157,32 @@
   }
   
   .side-by-side-container {
-	margin: 5px 0;
+	margin: 5px 5px 5px 0px;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
+	grid-gap: 5px;
   }
   
   .side-by-side-container .main-box {
-	margin: 0 5px 0 0;
+	margin: 0;
   }
+  
+  .side-by-side-container img {
+	height: 346px;
+	object-fit: cover;
+	max-width: 100%;
+	width: 100%;
+  }
+  
   
   /* footer */
   
   .wrapper-footer {
-	float: right;
+	text-align: right;
+	width: 100%;
+	background-color: var(--titlebar-background-color);
+	color: white;
+	padding: 2px
   }
   
   /* warning */
